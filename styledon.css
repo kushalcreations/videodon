@@ -1,249 +1,255 @@
 .progress {
-    background-color: limegreen;
-    height: 7px;
-    animation: load 1s ease-in-out 1;
+  background-color: limegreen;
+  height: 0.4375rem;
+  /*7px*/
+  animation: load 1s ease-in-out 1;
 }
 
 @keyframes load {
-    0% {
-        width: 0;
-    }
+  0% {
+    width: 0;
+  }
 
-    50% {
-        width: 50vw;
-    }
+  50% {
+    width: 50vw;
+  }
 
-    100% {
-        width: 100vw;
-    }
+  100% {
+    width: 100vw;
+  }
 }
 
 #lol {
-    background-color: rgb(17, 17, 17);
-    color: white;
-    text-align: center;
-    font-family: 'azonix';
-    position: static;
-    bottom: 0;
-    margin-top: 50px;
-    width: 100%;
-    font-size: 25px;
-    padding: 5px;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  text-align: center;
+  font-family: 'azonix';
+  position: static;
+  bottom: 0;
+  margin-top: 3.125rem;
+  width: 100%;
+  font-size: 1.5625rem;
+  padding: 0.3125rem;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgba(255, 255, 255, 0.274);
-    overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.274);
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flexbox:contents; */
-    /* align-content: center; */
-    /* float: right; */
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'azonix';
-    font-size: 20px;
-    margin: 30px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flexbox:contents; */
+  /* align-content: center; */
+  /* float: right; */
+  color: #000000;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-family: 'azonix';
+  font-size: 1.25rem;
+  margin: 1.875rem;
 }
 
 @font-face {
-    font-family: "azonix";
-    src: url(./azonix-font/Azonix-1VB0.otf) format("truetype");
+  font-family: "azonix";
+  src: url(./azonix-font/Azonix-1VB0.otf) format("truetype");
 }
 
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: limegreen;
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
+  background-color: limegreen;
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
 }
 
 body {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(160deg, rgb(231, 229, 229) 0%, rgb(65, 174, 49) 100%);
-    color: white;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(160deg, rgb(231, 229, 229) 0%, rgb(65, 174, 49) 100%);
+  color: white;
+  overflow-x: hidden;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .logoradius {
-    /* border: 10px solid #000000; */
-    width: 500px;
-    height: 500px;
-    border-radius: 200%;
-    /* object-fit: cover; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
+  /* border: 10px solid #000000; */
+  width: 31.25rem;
+  height: 31.25rem;
+  border-radius: 200%;
+  /* object-fit: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
 
 }
 
 .hr {
-    height: 8px;
-    border-color: limegreen;
+  height: 0.5rem;
+  border-color: limegreen;
 }
 
 /* card for products  */
 
 .card {
-    width: 100%;
-    height: 500px;
-    max-width: 400px;
-    border-radius: 8px;
-    background: rgba(71, 186, 39, 0.276);
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.007);
-    border-right-color: rgba(255, 255, 255, 0.05);
-    border-bottom-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
-    padding: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 31.25rem;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  background: rgba(71, 186, 39, 0.276);
+  backdrop-filter: blur(2px);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.007);
+  border-right-color: rgba(255, 255, 255, 0.05);
+  border-bottom-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1.25rem 1.875rem rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card * {
-    box-sizing: border-box;
-    transition: 400ms;
+  box-sizing: border-box;
+  transition: 400ms;
 }
 
 .card-img img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .card-title {
-    text-align: center;
-    margin-top: 8px;
-    color: #000000;
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-family: 'azonix';
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: 'azonix';
 }
 
 .card-content {
-    /* padding: 20px; */
-    /* margin: 20px; */
-    position: absolute;
-    right: 32px;
-    bottom: 48px;
-    left: 32px;
-    text-align: center;
-    color: #000000;
-    font-size: 0.70rem;
-    font-family: 'azonix';
-    opacity: 0;
+  /* padding: 20px; */
+  /* margin: 20px; */
+  position: absolute;
+  right: 2rem;
+  bottom: 3rem;
+  left: 2rem;
+  text-align: center;
+  color: #000000;
+  font-size: 0.70rem;
+  font-family: 'azonix';
+  opacity: 0;
 }
 
 .card:hover .card-img {
-    transform: translateY(-58px);
+  transform: translateY(-58px);
 }
 
 .card:hover .card-img img {
-    transform: translate(-16px, -42px) rotate(-16deg) scale(1.4);
+  transform: translate(-16px, -42px) rotate(-16deg) scale(1.4);
 }
 
 .card:hover .card-content {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* coustomer feedback */
 
 .centercontact {
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-.cardbeechme{
-    display: flex;
-    justify-content: center;
-    
+.cardbeechme {
+  display: flex;
+  justify-content: center;
+
 }
 
 .ball {
-    background-image: linear-gradient(160deg, black 0%, rgb(61, 165, 61) 100%);
-    color: white;
-    /* background-image: url("digital.jpeg"); */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-size: 1300px 700px; */
+  background-image: linear-gradient(160deg, black 0%, rgb(61, 165, 61) 100%);
+  color: white;
+  /* background-image: url("digital.jpeg"); */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-size: 1300px 700px; */
 }
 
 
 #f {
-    color: white
+  color: white
 }
 
 .headd {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 .pe {
-    color: white
+  color: white
 }
 
 /* support css */
 td {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 0.625rem;
 }
 
 th {
-    text-align: center;
-    padding: 10px;
-    background-color: limegreen;
+  text-align: center;
+  padding: 0.625rem;
+  background-color: limegreen;
 }
 
 tr.hover {
-    background-color: limegreen;
+  background-color: limegreen;
 }
 
 /* login */
 
-.center{
+.center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 25rem;
   background: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  box-shadow: 0.625rem 0.625rem 0.9375rem rgba(0, 0, 0, 0.05);
 }
-.center h1{
+
+.center h1 {
   text-align: center;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   border-bottom: 1px solid silver;
 }
-.center form{
-  padding: 0 40px;
+
+.center form {
+  padding: 0 2.5rem;
   box-sizing: border-box;
 }
-form .txt_field{
+
+form .txt_field {
   position: relative;
   border-bottom: 2px solid #adadad;
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
-.txt_field input{
+
+.txt_field input {
   width: 100%;
   padding: 0 5px;
   height: 40px;
@@ -252,7 +258,8 @@ form .txt_field{
   background: none;
   outline: none;
 }
-.txt_field label{
+
+.txt_field label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -263,7 +270,8 @@ form .txt_field{
   pointer-events: none;
   transition: .5s;
 }
-.txt_field span::before{
+
+.txt_field span::before {
   content: '';
   position: absolute;
   top: 40px;
@@ -273,28 +281,33 @@ form .txt_field{
   background: #3bd926;
   transition: .5s;
 }
-.txt_field input:focus ~ label,
-.txt_field input:valid ~ label{
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
   top: -5px;
   color: #44d926;
 }
-.txt_field input:focus ~ span::before,
-.txt_field input:valid ~ span::before{
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
   width: 100%;
 }
-.pass{
+
+.pass {
   margin: -5px 0 20px 5px;
   color: #a6a6a6;
   cursor: pointer;
   font-family: 'azonix';
   font-size: 12px;
 }
-.pass:hover{
-  text-decoration: underline  #26d926;
+
+.pass:hover {
+  text-decoration: underline #26d926;
   /* text-decoration: #26d926; */
-  
+
 }
-input[type="submit"]{
+
+input[type="submit"] {
   width: 100%;
   height: 50px;
   border: 1px solid;
@@ -307,34 +320,39 @@ input[type="submit"]{
   cursor: pointer;
   outline: none;
 }
-input[type="submit"]:hover{
+
+input[type="submit"]:hover {
   border-color: #29d926;
   transition: .5s;
 }
-.signup_link{
+
+.signup_link {
   margin: 30px 0;
   text-align: center;
   font-size: 16px;
   font-family: 'azonix';
   color: #666666;
 }
-.signup_link a{
+
+.signup_link a {
   color: #29d926;
   text-decoration: none;
 }
-.signup_link a:hover{
+
+.signup_link a:hover {
   text-decoration: underline;
 }
 
-.h11{
-    color: #000000;
-    font-family: 'azonix';
+.h11 {
+  color: #000000;
+  font-family: 'azonix';
 }
 
 /* boutton */
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -349,8 +367,8 @@ input[type="submit"]:hover{
 }
 
 .button1 {
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
   border: 2px solid #4CAF50;
   border-radius: 8px;
 }
@@ -358,4 +376,77 @@ input[type="submit"]:hover{
 .button1:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+/* filp card */
+
+/* .flip-card {
+  /* background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  Remove this if you don't want the 3D effect 
+} */
+
+.flip-card {
+  width: 100%;
+  height: 31.25rem;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  background: rgba(71, 186, 39, 0.276);
+  backdrop-filter: blur(2px);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.007);
+  border-right-color: rgba(255, 255, 255, 0.05);
+  border-bottom-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 1.25rem 1.875rem rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-card *{
+  box-sizing: border-box;
+  transition: 400ms;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(187, 187, 187, 0);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
 }
