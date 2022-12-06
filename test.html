@@ -2,194 +2,116 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="./img/logo2.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/logo2.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styledon.css">
+  <link rel="stylesheet" href="styledon.css">
 
-    <title>VideoDon</title>
+  <title>VideoDon</title>
 
-    <style>
-        .card {
-            width: 100%;
-            height: 31.25rem;
-            max-width: 25rem;
-            border-radius: 0.5rem;
-            background: rgba(71, 186, 39, 0.276);
-            backdrop-filter: blur(2px);
-            border: 0.0625rem solid rgba(255, 255, 255, 0.007);
-            border-right-color: rgba(255, 255, 255, 0.05);
-            border-bottom-color: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 1.25rem 1.875rem rgba(0, 0, 0, 0.05);
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-          
-          .card * {
-            box-sizing: border-box;
-            transition: 400ms;
-          }
-          
-          .card-img img {
-            display: block;
-            width: 100%;
-            height: auto;
-          }
-          
-          .card-title {
-            text-align: center;
-            margin-top: 0.5rem;
-            color: #000000;
-            font-size: 1.25rem;
-            font-weight: 400;
-            font-family: 'azonix';
-          }
-          
-          .card-content {
-            /* padding: 20px; */
-            /* margin: 20px; */
-            position: absolute;
-            right: 2rem;
-            bottom: 3rem;
-            left: 2rem;
-            text-align: center;
-            color: #000000;
-            font-size: 0.70rem;
-            font-family: 'azonix';
-            opacity: 0;
-          }
-          
-          .card:hover .card-img {
-            /*transform: translateY(-58px);*/
-            transform: rotateY(180deg);
-          }
-          
-          .card:hover .card-img img {
-            /*transform: translate(-16px, -42px) rotate(-16deg) scale(1.4);*/
-            transform: rotateY(180deg);
-          }
-          
-          .card:hover .card-content {
-            opacity: 1;
-          }
+  <style>
+    .topnav {
+      background-color: rgba(255, 255, 255, 0.274);
+      overflow: hidden;
+    }
 
-          .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-          }
-          
-          /* Do an horizontal flip when you move the mouse over the flip box container */
-          .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-          }
-          
-          /* Position the front and back side */
-          .flip-card-front,
-          .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            /* Safari */
-            backface-visibility: hidden;
-          }
-          
-          /* Style the front side (fallback if image is missing) */
-          .flip-card-front {
-            background-color: rgba(187, 187, 187, 0);
-            color: black;
-          }
-          
-          /* Style the back side */
-          .flip-card-back {
-            background-color: dodgerblue;
-            color: white;
-            transform: rotateY(180deg);
-          }
-          
-    </style>
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      color: #000000;
+      text-align: center;
+      padding: 0.875rem 1rem;
+      text-decoration: none;
+      font-family: 'azonix';
+      font-size: 1.25rem;
+      margin: 1.875rem;
+    }
+
+    /*.dropdown,
+    .dropbtn{
+      color: #000000;
+      text-align: center;
+      padding: 0;
+      text-decoration: none;
+      font-family: 'azonix';
+      font-size: 1.25rem;
+      margin: 0;
+    }*/
+
+    /* Change the color of links on hover */
+    .topnav a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: limegreen;
+      color: rgb(255, 255, 255);
+      border-radius: 0.5rem;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: rgb(209, 254, 187);
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
 
 </head>
 
 <body>
 
-    <div class="progress"></div>
+  <div class="progress"></div>
 
-    <div class="topnav">
-        <img class="logo-img" src="./img/logo1.jpg"  width="200" ALT="align box" ALIGN=CENTER>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact us.html">Contact Us</a>
-        <a href="support.html">Support</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="login.html">login</a>
-        
+  <div class="topnav">
+    <img class="logo-img" src="./img/logo1.jpg" width="200" ALT="align box" ALIGN=CENTER>
+    <a href="index.html">Home</a>
+    <!-- <a href="about.html">About</a> -->
+    <div class="dropdown">
+      <a class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="dropdown-content">
+        <a href="#">About us </a>
+        <a href="#">About the CEO</a>
+      </div>
     </div>
-
-    <br><br><br><br>
-    
-    <div class="cardbeechme">
-        <div class="card">
-            <div class="card-img">
-                <img src="./img/TV.png" alt="">
-                <h3 class="card-title">Television</h3>
-            </div>
-            <div class="card-content">
-                <a href="tv.html"><button class="button button1">Click for TV</button></a>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="./img/AC.png" alt="">
-                <h3 class="card-title">Air Conditioner</h3>
-            </div>
-            <div class="card-content">
-                <a href="ac.html"><button class="button button1">Click for AC</button></a>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="./img/wam.png" alt="">
-                <h3 class="card-title">Washing Machine</h3>
-            </div>
-            <div class="card-content">
-                <a href="washing.html"><button class="button button1">Click for Washing Machine</button></a>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="card">
-            <div class="card-img">
-                <img src="./img/fridge.png" alt="">
-                <h3 class="card-title">Fridge</h3>
-            </div>
-            <div class="card-content">
-                <a href="fridge.html"><button class="button button1">Click for Fridge</button></a>
-            </div>
-        </div>
+    <a href="products.html">Products</a>
+    <!-- <a href="contact us.html">Contact Us</a> -->
+    <!-- <a href="support.html">Support</a> -->
+    <div class="dropdown">
+      <a class="dropbtn">Contact US
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="dropdown-content">
+        <a href="#">Previous Feedbacks</a>
+        <a href="#">Your Feedback</a>
+        <a href="#">Service center</a>
+        <a href="#">Customer Support</a>
+      </div>
     </div>
+    <a href="faqs.html">FAQs</a>
+    <a href="login.html">login</a>
 
-    <footer id="lol">
-        <img class="logo-img" src="./img/logo1.jpg" height="150" ALT="align box" ALIGN=CENTER>
-        <p>VideoDon © 2022 . Design with ♥️ by vushal Creations , Lehar , Ila and Sachin.</p>
-    </footer>
-    
 </body>
 
 </html>

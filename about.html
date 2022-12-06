@@ -8,31 +8,60 @@
 
     <link rel="stylesheet" href="styledon.css">
     <style>
+        @font-face {
+            font-family: "azonix";
+            src: url(./azonix-font/Azonix-1VB0.otf) format("truetype");
+        }
+
         h1 {
+            color: black;
             text-align: center;
             text-decoration-line: underline;
             text-decoration-color: rgb(127, 232, 6);
+            font-family: "Azonix";
         }
 
         p {
             font-size: 19px;
+            color: black;
+
+        }
+
+        .fo {
+            color: white;
+        }
+
+        h3 {
+            color: black;
+            font-family: "Azonix";
         }
     </style>
 </head>
 
 <body>
     <div class="progress"></div>
-
-    <div class="topnav">
-        <img class="logo-img" src="./img/logo1.jpg"  width="200" ALT="align box" ALIGN=CENTER>
+    <div class="navbar">
+        <img class="logoimg" src="./img/logo1.jpg" width="200" ALT="align box" ALIGN=CENTER>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <div class="subnav">
+            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="about.html">About Us</a>
+                <a href="CEO.html">About the CEO</a>
+            </div>
+        </div>
         <a href="products.html">Products</a>
-        <a href="contact us.html">Contact Us</a>
-        <a href="support.html">Support</a>
+        <div class="subnav">
+            <button class="subnavbtn">Contact US <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="customer previous feedback.html">Previous Feedbacks</a>
+                <a href="customer feedback.html">Your Feedback</a>
+                <a href="servicecenter.html">Service center</a>
+                <a href="customer supportcontact us.html">Customer Support</a>
+            </div>
+        </div>
         <a href="faqs.html">FAQs</a>
         <a href="login.html">login</a>
-        
     </div>
 
     <h1>About Us</h1>
@@ -40,8 +69,8 @@
     <p>At VideoDON, all our efforts are centered around the customer and his needs. We are committed to delight and
         deliver beyond what is expected. By focusing on the right means, we have been successful in building a robust
         and dependable VideoDON Value Chain.</p><br>
-    <hr>
-    <img src="./img/parivaar.jpg" height="680px">
+    <hr class="bo">
+    <img src="./img/parivaar.jpg" height="825px">
     <h3><b>Ingenious Strategy</b></h3>
     <p>
         In today’s competitive world, what it takes for a business to survive is a lot of advance planning and a clear
@@ -120,7 +149,7 @@
 
     <footer id="lol">
         <img class="logo-img" src="./img/logo1.jpg" height="150" ALT="align box" ALIGN=CENTER>
-        <p>VideoDon © 2022 . Design with ♥️ by Kushal Creations , Lehar , Ila and Sachin.</p>
+        <p>VideoDon © 2022 . By Kushal , Lehar , Ila and Sachin.</p>
     </footer>
 
 </body>

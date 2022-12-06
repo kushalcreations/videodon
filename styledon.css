@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "azonix";
+  src: url(./azonix-font/Azonix-1VB0.otf) format("truetype");
+}
 .progress {
   background-color: limegreen;
   height: 0.4375rem;
@@ -32,39 +36,72 @@
   padding: 0.3125rem;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
+.navbar {
   background-color: rgba(255, 255, 255, 0.274);
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flexbox:contents; */
-  /* align-content: center; */
-  /* float: right; */
-  color: #000000;
-  text-align: center;
-  padding: 0.875rem 1rem;
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: black;
+  padding: 18px 16px;
   text-decoration: none;
   font-family: 'azonix';
-  font-size: 1.25rem;
-  margin: 1.875rem;
 }
 
-@font-face {
-  font-family: "azonix";
-  src: url(./azonix-font/Azonix-1VB0.otf) format("truetype");
+.subnav {
+
+  /*display: inline-block;*/
+  float: left;
+  overflow: hidden;
 }
 
+.subnav .subnavbtn {
+  display: inline-block;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 18px 16px;
+  background-color: inherit;
+  font-family: 'azonix';
+  margin: 0;
+}
 
-/* Change the color of links on hover */
-.topnav a:hover {
+.navbar a:hover,
+.subnav:hover .subnavbtn {
   background-color: limegreen;
   color: rgb(255, 255, 255);
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: limegreen;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+.logoimg{
+  float: left;
+  /*display: inline-block;*/
 }
 
 body {
@@ -446,7 +483,7 @@ input[type="submit"]:hover {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgba(109, 255, 30, 0.075);
   color: white;
   transform: rotateY(180deg);
 }

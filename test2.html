@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./img/logo2.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styledon.css">
+
+    <title>VideoDon</title>
+
+    <style>
+        body {
+            font-family: 'azonix';
+            margin: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.274);
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'azonix';
+        }
+
+        .subnav {
+
+            display: inline-block;
+            float: left;
+            overflow: hidden;
+        }
+
+        .subnav .subnavbtn {
+            display: inline-block;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: 'azonix';
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .subnav:hover .subnavbtn {
+            background-color: limegreen;
+            color: rgb(255, 255, 255);
+            border-radius: 0.5rem;
+        }
+
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: limegreen;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .subnav-content a {
+            float: left;
+            color: black;
+            text-decoration: none;
+        }
+
+        .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+        .logo-img{
+            float: left;
+            /*display: inline-block;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="navbar">
+        <img class="logo-img" src="./img/logo1.jpg" width="200" ALT="align box" ALIGN=CENTER>
+        <a href="index.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="about.html">About Us</a>
+                <a href="about ceo.html">About the CEO</a>
+            </div>
+        </div>
+        <a href="products.html">Products</a>
+        <div class="subnav">
+            <button class="subnavbtn">Contact US <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#">Previous Feedbacks</a>
+                <a href="#">Your Feedback</a>
+                <a href="#">Service center</a>
+                <a href="#">Customer Support</a>
+            </div>
+        </div>
+        <a href="faqs.html">FAQs</a>
+        <a href="login.html">login</a>
+    </div>
+
+</body>
+
+</html>
