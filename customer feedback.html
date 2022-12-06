@@ -1,8 +1,243 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <link rel="icon" href="./img/logo2.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styledon.css">
     <title>Customer Feedback</title>
-    <link rel="stylesheet" type="text/css" href="service.css">
+    <!-- <link rel="stylesheet" type="text/css" href="service.css"> -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .cards {
+            width: 20%;
+            background-color: aquamarine;
+            border-radius: 8px;
+            margin: 40px;
+            box-shadow: 2px 2px 10px black;
+            display: inline-block;
+        }
+        
+        .image img {
+            width: 252.5px;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            position: center;
+        }
+        
+        .title {
+            text-align: center;
+            margin: 3px;
+            padding: 5px;
+            color: black;
+        }
+        
+        .des {
+            text-align: center;
+            font-family: cursive;
+            color: black;
+        }
+        
+        button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: 1s;
+        }
+        
+        
+        
+        .heading {
+            text-align: center;
+            font-size: 80px;
+            color: black;
+        }
+        
+        
+        .p {
+            font-size: 20px;
+            font-family: cursive;
+            text-align: center;
+            color: black;
+        }
+        
+        .button1 {
+            margin-top: 20px;
+            width: 600px;
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 60px;
+        }
+        
+        .button2 {
+            margin-top: 20px;
+            width: 600px;
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 60px;
+        }
+        
+        
+        .form {
+            font-size: 20px;
+            font-family: cursive;
+            color: black;
+        }
+        
+        .txt {
+            width: 200px;
+            height: 25px;
+            border-radius: 8px;
+            box-shadow: 2px 4px 20px black;
+        }
+        
+        .txtarea {
+            width: 200px;
+            height: 100px;
+            border-radius: 8px;
+            box-shadow: 2px 4px 20px black;
+            border-width: 2px;
+        }
+        
+        .complainarea {
+            width: 600px;
+            height: 100px;
+            border-radius: 8px;
+            box-shadow: 2px 4px 20px black;
+            border-width: 2px;
+        }
+        
+        
+        .link {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .button1:hover {
+            background-color: rgb(12, 240, 28);
+            color: black;
+            font-size: 40px;
+            transition: 3s;
+        
+        }
+        
+        .button2:hover {
+            background-color: rgb(255, 16, 16);
+            color: black;
+            font-size: 40px;
+            transition: 3s;
+        }
+        
+        .marquee {
+            background-color: white;
+            color: black;
+        }
+        
+        .font {
+            font-size: 40px;
+            font-family: arial;
+            color: black;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        
+        
+        
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        
+        .contact-box {
+            background-color: aquamarine;
+            display: flex;
+        }
+        
+        .contact-left {
+            flex-basis: 60%;
+            padding: 40px 60px;
+        }
+        
+        .contact-right {
+            flex-basis: 60%;
+            padding: 40px 40px;
+            background-color: rgb(209, 244, 232);
+            color: black;
+        }
+        
+        .button3 {
+            margin-top: 20px;
+            width: 200px;
+            margin-bottom: 20px;
+            margin-left: 50px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 30px;
+        }
+        
+        .button3:hover {
+            background-color: aquamarine;
+            color: black;
+            font-size: 20px;
+            transition: 1s;
+        }
+        
+        .heading2 {
+            font-size: 40px;
+            color: black;
+        }
+        
+        tr th:first-child {
+            padding-right: 50px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        
+        
+        tr td {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
 <body class="body">
@@ -110,6 +345,11 @@
     <br><br><br><br>
     <p class="p">FOLLOW US:<br>videoDON_electronics</P>
     <img src="media.jpeg" width=50% alt="join_us_online" class="center">
+    
+    <footer id="lol">
+        <img class="logo-img" src="./img/logo1.jpg" height="150" ALT="align box" ALIGN=CENTER>
+        <p>VideoDon © 2022 . By Kushal , Lehar , Ila and Sachin.</p>
+    </footer>
 
 
 

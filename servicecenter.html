@@ -1,10 +1,242 @@
-<!-- saved from url=(0061)file:///C:/Users/DELL/OneDrive/Desktop/service%20centers.html -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="icon" href="./img/logo2.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styledon.css">
     <title>SERVICE CENTER</title>
-    <link rel="stylesheet" type="text/css" href="./SERVICE CENTER_files/service.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .cards {
+            width: 20%;
+            background-color: aquamarine;
+            border-radius: 8px;
+            margin: 40px;
+            box-shadow: 2px 2px 10px black;
+            display: inline-block;
+        }
+        
+        .image img {
+            width: 252.5px;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            position: center;
+        }
+        
+        .title {
+            text-align: center;
+            margin: 3px;
+            padding: 5px;
+            color: black;
+        }
+        
+        .des {
+            text-align: center;
+            font-family: cursive;
+            color: black;
+        }
+        
+        button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: 1s;
+        }
+        
+        
+        
+        .heading {
+            text-align: center;
+            font-size: 80px;
+            color: black;
+        }
+        
+        
+        .p {
+            font-size: 20px;
+            font-family: cursive;
+            text-align: center;
+            color: black;
+        }
+        
+        .button1 {
+            margin-top: 20px;
+            width: 600px;
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 60px;
+        }
+        
+        .button2 {
+            margin-top: 20px;
+            width: 600px;
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 60px;
+        }
+        
+        
+        .form {
+            font-size: 20px;
+            font-family: cursive;
+            color: black;
+        }
+        
+        .txt {
+            width: 200px;
+            height: 25px;
+            border-radius: 8px;
+            box-shadow: 2px 4px 20px black;
+        }
+        
+        .txtarea {
+            width: 200px;
+            height: 100px;
+            border-radius: 8px;
+            box-shadow: 2px 4px 20px black;
+            border-width: 2px;
+        }
+        
+        .complainarea {
+            width: 600px;
+            height: 100px;
+            border-radius: 8px;
+            box-shadow: 2px 4px 20px black;
+            border-width: 2px;
+        }
+        
+        
+        .link {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .button1:hover {
+            background-color: rgb(12, 240, 28);
+            color: black;
+            font-size: 40px;
+            transition: 3s;
+        
+        }
+        
+        .button2:hover {
+            background-color: rgb(255, 16, 16);
+            color: black;
+            font-size: 40px;
+            transition: 3s;
+        }
+        
+        .marquee {
+            background-color: white;
+            color: black;
+        }
+        
+        .font {
+            font-size: 40px;
+            font-family: arial;
+            color: black;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        
+        
+        
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        
+        .contact-box {
+            background-color: aquamarine;
+            display: flex;
+        }
+        
+        .contact-left {
+            flex-basis: 60%;
+            padding: 40px 60px;
+        }
+        
+        .contact-right {
+            flex-basis: 60%;
+            padding: 40px 40px;
+            background-color: rgb(209, 244, 232);
+            color: black;
+        }
+        
+        .button3 {
+            margin-top: 20px;
+            width: 200px;
+            margin-bottom: 20px;
+            margin-left: 50px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 30px;
+        }
+        
+        .button3:hover {
+            background-color: aquamarine;
+            color: black;
+            font-size: 20px;
+            transition: 1s;
+        }
+        
+        .heading2 {
+            font-size: 40px;
+            color: black;
+        }
+        
+        tr th:first-child {
+            padding-right: 50px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        
+        
+        tr td {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,7 +278,7 @@
         <br>
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/delhi.jpeg">
+                <img src="./img/delhi.jpeg">
 
             </div>
             <div class="title">
@@ -64,7 +296,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/srinagar1.jpeg">
+                <img src="./img/srinagar1.jpeg">
 
             </div>
             <div class="title">
@@ -82,7 +314,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/maharashtra.jpeg">
+                <img src="./img/maharashtra.jpeg">
 
             </div>
             <div class="title">
@@ -102,7 +334,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/kerala.jpeg">
+                <img src="./img/kerala.jpeg">
 
             </div>
             <div class="title">
@@ -123,7 +355,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/punjab.jpeg">
+                <img src="./img/punjab.jpeg">
 
             </div>
             <div class="title">
@@ -143,7 +375,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/madhyapradesh.jpeg">
+                <img src="./img/madhyapradesh.jpeg">
 
             </div>
             <div class="title">
@@ -161,7 +393,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/rajasthan.jpeg">
+                <img src="./img/rajasthan.jpeg">
 
             </div>
             <div class="title">
@@ -181,7 +413,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/gujrat1.jpeg">
+                <img src="./img/gujrat1.jpeg">
 
             </div>
             <div class="title">
@@ -200,7 +432,7 @@
         <!--card-->
         <div class="cards">
             <div class="image">
-                <img src="./SERVICE CENTER_files/raipur.jpeg">
+                <img src="./img/raipur.jpeg">
 
             </div>
             <div class="title">
@@ -213,10 +445,12 @@
                         target="_blank">See maps</a></button>
             </div>
         </div>
-
-
-
     </ul>
+
+    <footer id="lol">
+        <img class="logo-img" src="./img/logo1.jpg" height="150" ALT="align box" ALIGN=CENTER>
+        <p>VideoDon © 2022 . By Kushal , Lehar , Ila and Sachin.</p>
+    </footer>
 </body>
 
 </html>
